@@ -1,0 +1,839 @@
+@charset "utf-8";
+/* ========================================
+    全体設定
+========================================= */
+body {
+	color:#474747;
+	font-size: 14px;
+	line-height: 1.5em;
+	font-family: "メイリオ", "Meiryo", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	max-width: 996px;
+	margin:0 auto;
+	text-align: center;
+}
+a {
+	color:#474747;
+	text-decoration:none;
+}
+.title-txt{
+	font-size:24px;
+	font-weight: bold;
+}
+.bold-16{
+	font-size:16px;
+	font-weight: bold;
+}
+.white-bold{
+	font-size:16px;
+	color:white;
+	font-weight: bold;
+}
+.normal-txt{
+	font-size: 16px;
+	color:gray;
+	font-weight: normal;
+}
+.bold-14{
+	font-size:14px;
+	font-weight: bold;
+}
+/* ========================================
+    ヘッダー
+========================================= */
+header{
+	height:77px;
+	display:flex;
+	justify-content: space-between;
+}
+header h1{
+	display:flex;
+	align-items: flex-end;
+	margin-bottom:15px;
+}
+header h1 img{
+width:148px;
+}
+header>h1>p{
+	padding:0 0 5px 10px;
+	font-weight: bold;
+	font-size:12px;
+}
+.contact{
+	line-height: 77px;
+	margin-right:10px;
+}
+.contact a{
+	font-size:12px;
+	padding:14px 44px;
+	background-color: #da6a64;
+	color:white;
+	border-radius: 20px;
+}
+
+/* ========================================
+    メイン画像
+========================================= */
+#top-img{
+	height:514px;
+	background-image:url("img/top-bg.jpg");
+	background-size: cover;
+	position:relative;
+}
+	.top-text{
+		text-align: center;
+		width:400px;
+		height:300px;
+		background-color:rgba(255,255,255,0.9);
+		box-shadow: 0 0 30px 50px rgba(255,255,255,0.9);
+		position:absolute;
+		left:0;
+		right:0;
+		margin: 100px auto;
+		padding:20px 0;
+		border-radius: 20%;
+	}
+		.top-text01{
+			line-height: 2;
+		}
+		.top-text02{
+			margin-top:40px;
+		}
+/* ========================================
+    資料請求
+========================================= */
+#information{
+	height:396px;
+	background-color:#ebb94d;
+	text-align: center;
+	z-index: 100;
+}
+	#information>p{
+	padding-top:30px;
+	line-height: 1.5;
+	}
+	.info-text span{
+		display: inline-block;
+		color:#c61c49;
+		background-color: white;
+		padding:0 5px;
+		border-radius: 5px;
+		margin:10px 0;
+		font-weight: bold;
+		}
+		.contact-big a{
+			display: inline-block;
+			padding:30px 260px;
+			background-color: #da6a64;
+			/* color:white; */
+			border-radius: 40px;
+			/* font-weight: bold;
+			font-size: 16px; */
+		}
+.twitter,.fb{
+	display: inline-block;
+	width:auto;
+	font-size: 8px;
+	padding:0 10px;
+	color:white;
+	border-radius: 5px;
+}
+.sns{
+	margin:30px 0 40px 0;
+}
+.twitter{
+	background-color: #1a95e0;
+}
+.fb{
+	background-color: #4267b2;
+}
+/* ========================================
+    about12345
+========================================= */
+/* about全体 */
+.brackets{
+	color:black;
+	position:relative;
+}
+.brackets::before{
+	content:'';
+	width:50px;
+	height:50px;
+	position:absolute;
+	border-left:solid 4px #ebb94d;
+	border-top:solid 4px #ebb94d;
+	top:45px;
+	left:50px;
+}
+.brackets::after{
+	content:'';
+	width:50px;
+	height:50px;
+	position:absolute;
+	border-right:solid 4px #ebb94d;
+	border-bottom:solid 4px #ebb94d;
+	right:50px;
+}
+/* about1 */
+#about1{
+	height:606px;
+	background:url("img/about1-bg.jpg")no-repeat;
+	background-size: 100% 200px;
+	background-position: bottom;
+}
+.about1-title{
+	padding-top:88px;
+}
+#about1>p{
+	padding-top:80px;
+	}
+#about1>p>span{
+		font-weight: bold;
+		background:linear-gradient(transparent 70%, #ebb94d 70%);
+	}
+/* about2 */
+#about2{
+	padding-top:30px;
+	height:600px;
+	background-color:#fef5e0;
+	position: relative;
+}
+.about2-title{
+	padding-top:88px;
+	padding-bottom:77px;
+	line-height: 1.4em;
+}
+.about-tub{
+	font-size:14px;
+	color: white;
+	font-weight: bold;
+	background-color:#ebb94d;
+	height:80px;
+	width:80px;
+	border-radius: 50%;
+	line-height: 80px;
+	position:absolute;
+	top:-40px;
+	left:45%;
+}
+.skills{
+	background-color: white;
+	width:88%;
+	border:2px solid #ebb94d;
+	padding:34px;
+	margin: 37px auto 73px auto;
+}
+.skill-list{
+	display: flex;
+	justify-content:space-between;
+	margin:26px 90px;
+}
+.skill-list p{
+	font-size: 12px;
+	margin-top:10px;
+	line-height: 1rem;
+}
+.skill-list>li>img{
+	height:50px;
+	width:auto;
+}
+/* about3 */
+#about3{
+	height:550px;
+	background-image:url("img/about3-bg.jpg");
+	background-size: cover;
+	position: relative;
+}
+#about3::before{
+	content:'';
+	background-color: rgba(0,0,0,.5);
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+}
+.about3-title{
+	position: absolute;
+	color:white;
+	padding-top:60px;
+	width:100%;
+	margin: 0 auto;
+}
+.about3-text{
+	line-height: 2;
+	margin:28px 0;
+	position: absolute;
+	width:100%;
+	margin-top:116px;
+}
+#about3 span{
+	color:#ebb94d;
+	font-weight: bold;
+}
+.steps{
+	display: flex;
+	justify-content: space-around;
+	position: absolute;
+	width:100%;
+	top:200px;
+}
+.step{
+	width:30%;
+	height: 170px;
+	background-color: white;
+	border-radius: 5px;
+}
+.step>dt{
+	background: #ebb94d;
+	margin:32px auto;
+	border-radius: 5px;
+	width:85%;
+	text-transform: uppercase;
+	padding:2px;
+}
+.step>dd{
+	font-weight: bold;
+	line-height: 2;
+}
+.about3-bottom-text>p{
+	position: absolute;
+	bottom:0;
+	width:100%;
+	background-color: #016ea9;
+	padding:40px 0;
+	}
+
+/* about4 */
+#about4{
+	height:530px;
+}
+#about4>h2{
+	padding: 68px 0 48px 0;
+}
+.about4-box{
+	display: flex;
+	justify-content:center;
+	margin: 60px auto;
+}
+.about4-box>img{
+	margin:0 20px;
+	width:180px;
+}
+/* about5 */
+#about5{
+	background-color:#fef5e0;
+}
+#about5 h2{
+	padding-top:70px;
+	line-height: 1.4em;
+}
+.points{
+	display:flex;
+	justify-content: center;
+}
+.point{
+	width:300px;
+	padding:68px 10px;
+}
+.point img{
+	width:100%;
+}
+.point-txt{
+	font-size:16px;
+	color:gray;
+	text-align: left;
+}
+.point-title{
+	color:#ebb94d;
+	font-weight: bold;
+	margin:5px 0 15px 0;
+	text-align: left;
+}
+.support{
+	background-color: white;
+	border:2px solid #ebb94d;
+	padding:46px;
+	width:820px;
+	margin:0 auto;
+}
+.support-txt{
+	margin:16px 0;
+}
+.support h3{
+	color:#ebb94d;
+}
+.point-bottom{
+	padding:42px 0;
+	text-align: center;
+	font-size: 14px;
+	color: gray;
+}
+/* ========================================
+    メンバー
+========================================= */
+#members{
+	background-image:url("img/member-bg.jpg");
+	background-size: cover;
+	position: relative;
+}
+#members::before{
+	content:'';
+	background-color: rgba(0,0,0,.5);
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+}
+
+#members h2{
+	color:white;
+	position: absolute;
+	top:90px;
+	width:100%;
+	text-align: center;
+}
+.members-subtitle{
+	position:absolute;
+	top:140px;
+	width:100%;
+	text-align: center;
+}
+.member-group{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: center;
+	padding-bottom:40px;
+	padding-top:160px;
+}
+.member{
+	margin:200px 10px 0px 10px;
+	width:350px;
+	height:200px;
+	padding:40px 20px;
+	position: relative;
+	border: 2px solid white;
+}
+.member dt img{
+	position: absolute;
+	top:-60%;
+	border-radius: 50%;
+	width:200px;
+	left:95px;
+}
+.member dd{
+	color:white;
+}
+.detail{
+	text-align: left;
+}
+.name{
+	padding:10px 0;
+}
+/* ========================================
+    QandA
+========================================= */
+#qa{
+	height:auto;
+}
+.qa-top{
+	height:212px;
+	background-color: #ebb94d;
+	padding-top:44px;
+}
+.qa-tub{
+	width:78px;
+	border-radius: 50%;
+	background-color: white;
+	color: #ebb94d;
+	font-size:16px;
+	line-height: 78px;
+	margin:0 auto;
+}
+#qa h2{
+	color:white;
+	margin:20px;
+	line-height: 1.4em;
+}
+#qa .brackets::before{
+	border-left:solid 4px white;
+	border-top:solid 4px white;
+	top:-10px;
+	left:50px;
+}
+#qa .brackets::after{
+	border-right:solid 4px white;
+	border-bottom:solid 4px white;
+	right:50px;
+}
+.triangle{
+	width:0;
+	height:0;
+	border-top:30px solid #ebb94d;
+	border-right:30px solid transparent;
+	border-left:30px solid transparent;
+	margin: 0 auto;
+}
+#qa h3{
+	margin:20px ;
+}
+.qa-voice{
+	width:80%;
+	margin:0 auto;
+}
+.qa-voice>p{
+	margin-bottom:30px;
+}
+.voices{
+	display:flex;
+	margin-bottom:30px;
+}
+.voices:last-child{
+	/* display:flex; */
+	margin-bottom:50px;
+}
+.voices img{
+	width:220px;
+	border:6px solid #ebb94d;
+}
+.voices dd{
+	font-style: italic;
+	padding:20px 30px;
+	text-align: left;
+}
+.voices dd span{
+	font-style: italic;
+	text-decoration: underline;
+	display: inline-block;
+	margin-top:10px;
+}
+/* ========================================
+    contents
+========================================= */
+#contents{
+	background-image: url("img/contents-bg.jpg");
+	background-size: cover;
+}
+#contents h2{
+	color:white;
+	padding:44px 0 16px 0;
+}
+.contents-list{
+	display:flex;
+	justify-content: center;
+}
+.list{
+	width:262px;
+	height:auto;
+	margin:30px 12px 56px 12px;
+	border:1px solid #016ea9;
+}
+.list-title{
+	font-size:16px;
+	color:white;
+	background-color: #016ea9;
+	height:44px;
+	line-height: 44px;
+	font-weight: bold;
+}
+.list li{
+	height:40px;
+	font-weight:bold;
+	font-size:14px;
+	line-height: 40px;
+	border-bottom:1px dotted gray;
+	background-color: white;
+}
+.contents-bottom{
+	text-align: center;
+	background-color: #016ea9;
+	padding:24px;
+}
+/* ========================================
+    受講の流れ
+========================================= */
+#flow h2{
+	padding:42px 0 38px 0;
+}
+.flow-img{
+	width:700px;
+	padding:0 60px;
+}
+.flow-box{
+	display:flex;
+	background-color: #fef5e0;
+	margin:20px auto 0 auto ;
+	width:822px;
+}
+.flow-box:last-child{
+	margin-bottom:28px;
+}
+.flow-box dt{
+	width:96px;
+	padding:20px 0 20px 37px;
+}
+.flow-box dd{
+	width:624px;
+	text-align: left;
+	padding:30px;
+}
+.border{
+	content:'';
+	width:534px;
+	height:22px;
+	position: relative;
+	border-bottom:2px solid #ebb94d;
+	left:214px;
+}
+.border::after{
+	content:'';
+	width:534px;
+	height:24px;
+	position: absolute;
+	bottom:-23px;
+}
+.border-odd{
+	border-left:2px solid #ebb94d;
+}
+.border-odd::after{
+	border-right:2px solid #ebb94d;
+	left:0px;
+}
+.border-even{
+	border-right:2px solid #ebb94d;
+}
+.border-even::after{
+	border-left:2px solid #ebb94d;
+	right:0px;
+}
+/* ========================================
+    なぜバンコク
+========================================= */
+#why{
+	background-image:url("img/member-bg.jpg");
+	background-size: cover;
+}
+.why-box{
+	color:white;
+	text-align: left;
+	padding:70px;
+	background-color: rgba(100,185,211,0.5);
+}
+#why h3{
+	font-weight: bold;
+	font-size: 18px;
+	margin-bottom:24px;
+}
+.why-box ul{
+	margin:20px 0;
+}
+.why-box li{
+	line-height: 2em;
+	font-weight: bold;
+}
+/* ========================================
+参加特典
+========================================= */
+#privilege{
+	background-color:#f7c23c;
+	padding-bottom:30px;
+}
+#privilege h2{
+	padding:46px 0 38px 0;
+}
+#privilege span{
+	color:white;
+	font-weight: bold;
+}
+.privilege-box{
+	margin:90px 65px 0 65px;
+	border:2px solid white;
+	position: relative;
+}
+.privilege-box h3{
+	position: absolute;
+	top:-50px;
+	left:190px;
+	background-color: #f7c23c;
+	padding:30px;
+}
+.privilege-123{
+	width:85%;
+	margin: 0 auto;
+	display: flex;
+	padding:30px 0px;
+	justify-content: space-between;
+}
+.privilege-123 dl{
+	height: 200px;
+	width:200px;
+	border-radius: 50%;
+	background-color: white;
+	text-align: center;
+}
+.privilege-123 dt{
+	color:#ebb94d;
+	font-size:18px;
+	padding:25px 0 20px 0;
+}
+.privilege-123 dd{
+	font-weight: bold;
+	font-size:14px;
+	width:90%;
+	margin: 0 auto;
+}
+/* ========================================
+    メッセージ12
+========================================= */
+/* メッセージ１ */
+#message01{
+	background-image:url("img/message01-bg.jpg");
+	background-size:cover;
+}
+.message-box{
+	background-color: rgba(0,0,0,0.5);
+}
+#message01 h3{
+	color:white;
+	padding:44px 0 24px 0;
+}
+#message01 .brackets::before{
+	border-left:solid 4px white;
+	border-top:solid 4px white;
+	top:-20px;
+	left:50px;
+}
+#message01 .brackets::after{
+	border-right:solid 4px white;
+	border-bottom:solid 4px white;
+	right:50px;
+}
+#message01 h4{
+	color:white;
+	margin:44px 0 32px 0;
+}
+.message01-bottom{
+	padding-bottom:56px;
+}
+#message01 p{
+	line-height: 2em;
+}
+/* message02 */
+#message02 h2{
+	padding:42px 0 32px 0;
+}
+.message02-box{
+	padding:32px 0 60px 0;
+	width:740px;
+	margin:0 auto;
+	display: flex;
+}
+.message02-box img{
+	width:180px;
+	height:140px;
+	padding-right:24px;
+}
+.message02-box p{
+	text-align: left;
+	line-height:1.6em;
+}
+/* ========================================
+    資料請求フォーム
+========================================= */
+#form{
+	background-color:#f7c23c;
+}
+#form h2{
+	padding-top:44px;
+}
+#form p{
+	padding:20px 0;
+}
+#form input, #form textarea{
+	width:568px;
+	height:40px;
+	border-radius: 5px;
+	border-style: none;
+	margin-bottom:18px;
+	color:gray;
+	padding-left:10px;
+}
+#form textarea{
+	height:80px;
+}
+#form button{
+	background-color: #da6a64;
+	width:578px;
+	height:40px;
+	border-radius: 20px;
+	border-style: none;
+	color:white;
+	font-weight: bold;
+	font-size: 16px;
+	letter-spacing: 10px;
+	margin-bottom:52px;
+}
+/* ========================================
+    よくある質問
+========================================= */
+#question h2{
+	padding:45px 0 35px 0;
+}
+.q-mark{
+	color:blue;
+}
+.qa-list{
+	padding:20px 0 40px 0;
+	text-align: left;
+	width:740px;
+	margin: 0 auto;
+}
+.ask{
+	border:1px solid gray;
+	padding:15px;
+}
+.q-item{
+	margin:5px 0;
+	position: relative;
+}
+#question span .up{
+	position:absolute;
+	top:20px;
+	right:20px;
+	display:none;
+}
+#question span .down{
+	position:absolute;
+	top:20px;
+	right:20px;
+}
+.answer>p{
+	padding:20px;
+}
+.answer{
+	display:none;
+}
+.open{
+	display:block;
+}
+/*========================================
+    フッター
+========================================= */
+footer{
+	height:186px;
+	background-color:#ececec;
+}
+.footer-box:first-child{
+	padding-top:40px;
+}
+.footer-box>.sns{
+	margin:15px 0 40px 0;
+}
+footer a{
+	color:blue;
+}
+/* ========================================
+    フッター
+========================================= */
